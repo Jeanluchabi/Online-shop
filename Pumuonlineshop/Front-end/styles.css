@@ -1,0 +1,212 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: darkblue;
+    color: white;
+    line-height: 1.6;
+}
+
+/* Header Styles */
+header {
+    background: #333;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+header h1 {
+    font-size: 24px;
+    margin: 0;
+    padding-right: 20px;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+header .search-cart {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+header .search-cart input {
+    padding: 5px;
+    border: 1px solid #ccc;
+    width: 60%;
+}
+
+header .search-cart button {
+    padding: 5px 10px;
+    background: black;
+    color: white;
+    border: 1px solid #ccc;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px 10px;
+    position: relative;
+}
+
+header nav ul li a::after {
+    content: "";
+    display: block;
+    height: 2px;
+    background: transparent;
+    transition: background 0.3s;
+}
+
+header nav ul li a:hover::after {
+    background: red;
+    width: 100%;
+}
+
+/* Main Section Styles */
+main {
+    padding: 20px;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.products article {
+    padding: 10px;
+    margin: 10px;
+    width: 30%;
+    text-align: center;
+    background: #222;
+    border-radius: 8px;
+}
+
+.products article img {
+    max-width: 100%;
+}
+
+.products article button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    background: black;
+    color: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Form Styles */
+form {
+    padding: 20px;
+    margin: 20px auto;
+    background: #222;
+    width: 50%;
+    max-width: 500px;
+    border-radius: 8px;
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"],
+form input[type="tel"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    background: #444;
+    color: white;
+}
+
+form button {
+    padding: 10px 20px;
+    background: black;
+    color: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+form a {
+    color: #fff;
+    text-decoration: none;
+}
+
+form a:hover {
+    text-decoration: underline;
+}
+
+.social-media-icons img {
+    width: 32px;
+    margin: 0 10px;
+}
+
+/* Footer Styles */
+footer {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-around;
+}
+
+footer .container .row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+footer .container .col-md-4 {
+    width: 30%;
+}
+
+footer .container .col-md-4 ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer .container .col-md-4 ul li {
+    margin: 5px 0;
+}
+
+footer .container .col-md-4 ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer .container .col-md-4 h3 {
+    border-bottom: 1px solid #fff;
+    padding-bottom: 5px;
+}
+
+footer .copyright {
+    margin-top: 10px;
+}
